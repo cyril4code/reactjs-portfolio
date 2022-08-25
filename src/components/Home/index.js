@@ -1,7 +1,9 @@
-import LogoTitle from '../../assets/images/logo-s.png'
-import { Link } from 'react-router-dom'
-import './index.scss'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import LogoTitle from '../../assets/images/logo-s.png'
+import Logo from './Logo'
+import './index.scss'
+
 import AnimatedLetters from '../AnimatedLetters'
 
 const Home = () => {
@@ -12,7 +14,7 @@ const Home = () => {
     'W',
     'e',
     'b',
-    ' ',
+    '  ',
     'D',
     'e',
     'v',
@@ -58,6 +60,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   )
 }
